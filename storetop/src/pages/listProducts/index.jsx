@@ -35,7 +35,7 @@ export const ListProducts = () => {
                    <h4>Avaliações{item.rating.count}</h4>
                    </div>
                    <br/>
-                  <button className={styles.btn_info}><span> Mais informçãoes </span></button>
+                  <button className={styles.btn_info}><span> Mais informações </span></button>
                    </Link>
             </div>      
             )
