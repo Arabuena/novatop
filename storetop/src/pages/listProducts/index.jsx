@@ -26,7 +26,7 @@ export const ListProducts = () => {
         return(
             <div key={index} className={styles.list_items}>
                 <Link to={`/productsId/${item.id}`} className={styles.link}>               
-                   <img src={item.image} alt='' width={200}/>
+                  <div> <img src={item.image} alt='' width={200}/></div>
                    <h2>{item.title}</h2>
                    <br/>
                    <div className={styles.evaluations}> 

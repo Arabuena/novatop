@@ -1,5 +1,7 @@
 .container{
     display:flex;
+    max-width: 1400px;
+    align: center;
 }
 
 .list_products{
