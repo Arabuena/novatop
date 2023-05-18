@@ -8,18 +8,20 @@ import FACE from '../assets//navicons/facebook.png';
 const Nav = styled.div`
   background-color: #000;
   padding: 5px;
-  right: 15px; 
+  right: 5px; 
   left: 0px;
   position: relative;
 
   @media (max-width: 768px) { // Estilos para tablet
     flex-direction: column;
     align-items: center;
-    padding: 10px;
+    padding: 3px;
   }
 
 @media (max-width: 480px) { // Estilos para celular
-  padding: 10px;
+  flex-direction: column;
+    align-items: center;
+  padding: 1px;
 }
 
 `;
@@ -40,9 +42,7 @@ const ImgFone = styled.img`
   }
 
   @media (max-width: 480px) { // Estilos para celular
-    left: auto;
-    right: 50%;
-    transform: translateX(50%);
+    display: none; // Adicione esta regra para a imagem desaparecer
   }
 `;
 
@@ -64,6 +64,15 @@ const TextRight = styled.text`
     text-align: center;
     left: 0;
     margin-bottom: 10px;
+
+     @media (max-width: 480px) { // Estilos para celular
+      flex-direction: column;
+    align-items: top;
+    padding: 5px;
+    right: auto;
+  
+    transform: translateX(-40%);
+  }
   }
 
 `;
@@ -84,6 +93,7 @@ const ImgInstaDiv = styled.img`
   }
 
   @media (max-width: 480px) { // Estilos para celular
+    
     right: auto;
     left: 50%;
     transform: translateX(-50%);
