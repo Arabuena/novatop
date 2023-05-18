@@ -11,6 +11,17 @@ const Nav = styled.div`
   right: 15px; 
   left: 0px;
   position: relative;
+
+  @media (max-width: 768px) { // Estilos para tablet
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+@media (max-width: 480px) { // Estilos para celular
+  padding: 10px;
+}
+
 `;
 
 const ImgFone = styled.img` 
@@ -21,6 +32,18 @@ const ImgFone = styled.img`
   top: 0%;
   left: 80px;
   transform: translateY(-10%);
+
+  @media (max-width: 768px) { // Estilos para tablet
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) { // Estilos para celular
+    left: auto;
+    right: 50%;
+    transform: translateX(50%);
+  }
 `;
 
 const TextRight = styled.text`
@@ -37,6 +60,12 @@ const TextRight = styled.text`
   text-align: right 25px;
   color: #ffffff;
 
+  @media (max-width: 768px) { // Estilos para tablet
+    text-align: center;
+    left: 0;
+    margin-bottom: 10px;
+  }
+
 `;
 
 const ImgInstaDiv = styled.img` 
@@ -47,6 +76,18 @@ const ImgInstaDiv = styled.img`
   top: 10%;
   right: 40px;
   transform: translateY(-10%);
+
+  @media (max-width: 768px) { // Estilos para tablet
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) { // Estilos para celular
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `;
 
 const ImgFace = styled.img` 
@@ -58,6 +99,18 @@ const ImgFace = styled.img`
  right: 120px;
  transform: translateY(-10%);
 
+ @media (max-width: 768px) { // Estilos para tablet
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) { // Estilos para celular
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
 `;
 
 const ImgTwiter = styled.img` 
@@ -68,6 +121,18 @@ const ImgTwiter = styled.img`
   top: 10%;
  right: 150px;
   transform: translateY(-10%);
+
+  @media (max-width: 768px) { // Estilos para tablet
+    position: static;
+    transform: none;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 480px) { // Estilos para celular
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 `;
 
 
