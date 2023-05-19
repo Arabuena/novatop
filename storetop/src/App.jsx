@@ -5,18 +5,20 @@ import {ProductsId } from './pages/productsId';
 import styles from './App.module.css';
 import {Header} from './Componentes/Header';
 import {Nave} from './Componentes/nave';
+import SlideShow from './Componentes/slide';
 
 function App() {
   
   return (
     <>
-     
-   
+        
     <div className={styles.header}>
     <Header/>     
     </div>
 
     <div><Nave/></div>
+
+   <div> <SlideShow/></div>
 
     <div>
   <BrowserRouter>
@@ -26,6 +28,7 @@ function App() {
   </Routes>
   </BrowserRouter>
     </div>
+   
     </>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import logoImg from '../assets/navicons/logo.png';
 
+
 const Navbar = styled.nav`
   display: flex;
   align-items: center;
@@ -31,8 +32,6 @@ const NavButtons = styled.div`
   }
 `;
 
-
-
 const NavButton = styled.button`
   background-color: transparent;
   border: none;
@@ -47,8 +46,6 @@ const NavButton = styled.button`
   }
   
 `;
-
-
 
 export const Nave = () => {
   return (
