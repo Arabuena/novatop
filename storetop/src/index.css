@@ -1,12 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-h2, 
-p, 
-h4,
-strong {
+h2, p, h4, strong {
   font-family: Arial, Helvetica, Sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  flex: 1;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
 }
