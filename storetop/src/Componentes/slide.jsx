@@ -5,9 +5,9 @@ import styles from './SlideShow.module.css';
 const SlideShow = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const images = [
-    '/src/assets/slideGallery/original/a.png',
-    '/src/assets/slideGallery/original/b.png',
-    '/src/assets/slideGallery/original/c.png'
+    'https://ostop.digital/wp-content/uploads/2023/05/a-1024x291.png',
+    'https://ostop.digital/wp-content/uploads/2023/05/b-1024x291.png',
+    'https://ostop.digital/wp-content/uploads/2023/05/c-1024x291.png'
   ];
 
   useEffect(() => {
@@ -27,13 +27,15 @@ const SlideShow = () => {
   };
 
   return (
+
+    <>
     <div className="slideshow">
       <div className="slide-container">
-        <img
-          src={images[currentSlide]}
-          alt={`Slide ${currentSlide}`}
-          style={{ maxWidth: '100%', maxHeight: '100%' }}
-        />
+      <img
+  src={images[currentSlide]}
+  alt={`Slide ${currentSlide}`}
+  className={styles.slideImage}
+/>
       </div>
       <div className="controls">
         <button className={styles.button} onClick={goToPrevSlide}>
@@ -44,6 +46,7 @@ const SlideShow = () => {
         </button>
       </div>
     </div>
+    </>
   );
 };
 
