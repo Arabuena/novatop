@@ -6,6 +6,7 @@ import styles from './App.module.css';
 import {Header} from './Componentes/Header';
 import {Nave} from './Componentes/nave';
 import SlideShow from './Componentes/slide';
+import Footer from './Componentes/footer';
 
 function App() {
   
@@ -28,6 +29,7 @@ function App() {
   </Routes>
   </BrowserRouter>
     </div>
+    <div><Footer/></div> 
    
     </>
   )
