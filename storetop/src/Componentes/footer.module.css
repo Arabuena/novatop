@@ -15,27 +15,36 @@
 
 .socialIcons {
   margin-top: 10px;
+  line-height: 1.8; 
 }
 
 .icon {
   font-size: 20px;
   margin-right: 10px;
 }
-.footer {
-  background-image: url("../assets/footerGallery/Bg.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 20px;
-  display: flex;
-  justify-content: space-between;
+
+a {
+  color: white;
+  text-decoration: none; 
+  margin-bottom: 15px;
 }
 
-.column {
-  flex-basis: 20%;
-  text-align: center;
+.supportHeading {
+  line-height: 1.8; 
+}
+
+.lojaHeading {
+  line-height: 1.8;
+}
+
+.empresaHeading {
+  line-height: 1.8;
 }
 
 .logo {
   max-width: 250px;
   height: auto;
 }
+
+
+

@@ -7,6 +7,7 @@ import {Header} from './Componentes/Header';
 import {Nave} from './Componentes/nave';
 import SlideShow from './Componentes/slide';
 import Footer from './Componentes/footer';
+import {Copy} from './Componentes/copy'
 
 function App() {
   
@@ -30,6 +31,7 @@ function App() {
   </BrowserRouter>
     </div>
     <div><Footer/></div> 
+    <div><Copy/></div>
    
     </>
   )
