@@ -1,3 +1,7 @@
+/* footer.module.css */
+
+/* Importe imagens e ajuste o caminho da imagem do background se necessário */
+
 .footer {
   background-image: url("../assets/footerGallery/Bg.png");
   background-repeat: no-repeat;
@@ -5,17 +9,21 @@
   padding: 20px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap; /* Adição para ajustar em telas menores */
 }
 
 .column {
   flex-basis: 20%;
   text-align: center;
   color: #fafafa;
+  margin-bottom: 15px; /* Adição para espaçamento inferior */
 }
 
 .socialIcons {
   margin-top: 10px;
-  line-height: 1.8; 
+  line-height: 1.8;
+  display: flex; /* Adição para alinhar os ícones horizontalmente */
+  justify-content: center; /* Adição para alinhar os ícones horizontalmente */
 }
 
 .icon {
@@ -25,26 +33,66 @@
 
 a {
   color: white;
-  text-decoration: none; 
+  text-decoration: none;
   margin-bottom: 15px;
 }
 
-.supportHeading {
-  line-height: 1.8; 
-}
-
-.lojaHeading {
-  line-height: 1.8;
-}
-
+.supportHeading,
+.lojaHeading,
 .empresaHeading {
   line-height: 1.8;
+  margin: 0; /* Remoção da tag <p> envolvendo os headings */
+  font-size: 18px; /* Adição do tamanho da fonte */
 }
 
 .logo {
   max-width: 250px;
   height: auto;
 }
+/* footer.module.css */
 
+/* Adicione estilos adicionais conforme necessário */
 
+.CopyHeading {
+  text-align: right;
+}
 
+.BandeirasHeading {
+  text-align: left;
+  width: 230px;
+  position: relative;
+}
+
+.Image {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 100%;
+}
+
+.Wrapper {
+  display: flex;
+  align-items: flex-end; /* Alterado para alinhar no final do container */
+  padding: 5px;
+}
+
+@media (max-width: 768px) {
+  .Wrapper {
+    flex-direction: column; /* Alterado para empilhar em telas menores */
+    align-items: flex-start; /* Alterado para alinhar à esquerda em telas menores */
+  }
+  
+  .CopyHeading {
+    text-align: left; /* Alterado para alinhar à esquerda em telas menores */
+    margin-bottom: 10px; /* Adição de espaço inferior em telas menores */
+  }
+  
+  .BandeirasHeading {
+    width: 100%; /* Alterado para ocupar a largura total em telas menores */
+  }
+  
+  .Image {
+    position: static; /* Alterado para exibir a imagem normalmente em telas menores */
+  }
+}
